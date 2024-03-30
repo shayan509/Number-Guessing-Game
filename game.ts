@@ -2,6 +2,8 @@
 
 import inquirer from "inquirer";
 
+console.log("Welcome to number guessing game.");
+
 const randomNumber = Math.floor(Math.random() * 10 + 1);
 
 const answer = await inquirer.prompt([
@@ -17,4 +19,6 @@ if (answer.userGuessedNumber === randomNumber) {
 } else {
   console.log(`The number is ${randomNumber}`);
   console.log("You guessed wrong number.");
-};
+}
+
+console.log("Thanks for playing.");
